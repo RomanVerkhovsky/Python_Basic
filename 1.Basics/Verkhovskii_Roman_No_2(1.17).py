@@ -1,0 +1,118 @@
+import math
+# No 1.17
+# a)
+x1 = int(input("Введите число для x1 >> "))
+x2 = int(input("Введите число для x2 >> "))
+a = math.sqrt(math.pow(x1, 2) + math.pow(x2, 2))
+print("квадратный корень из (x1 + x2) во второй степени =", a)
+
+# б)
+x1 = int(input("Введите число для x1 >> "))
+x2 = int(input("Введите число для x2 >> "))
+x3 = int(input("Введите число для x3 >> "))
+c = (x1 * x2) + (x1 * x3) + (x2 * x3)
+print("x1x2 + x1x3 + x2x3 =", c)
+
+# в)
+v0 = int(input("Введите начальную скорость >> "))
+t = int(input("Введите время"))
+a = int(input("Введите ускорение"))
+s = (v0 * t) + ((a * math.pow(t, 2)) / 2)
+print("Перемещение (S) =", s)
+
+# г)
+m = int(input("Введите число для m >> "))
+v = int(input("Введите число для v >> "))
+g = int(input("Введите число для g >> "))
+h = int(input("Введите число для h >> "))
+f = ((m * math.pow(v, 2)) / 2) + (m * g * h)
+print("mv*v/2+mgh =", f)
+
+# д)
+r1 = int(input("Введите число для R1 >> "))
+r2 = int(input("Введите число для R2 >> "))
+r3 = (1 / r1) + (1 / r2)
+print("1/R1 + 1/R2 =", r3)
+
+# е)
+m = int(input("Введите число для m >> "))
+g = int(input("Введите число для g >> "))
+a = int(input("Введите число для a >> "))
+q = m * g * math.cos(a)
+print("mgcos(alpha) =", q)
+
+# ж
+r = int(input("Введите число для R >> "))
+y = 2 * math.pi * r
+print("2piR =", y)
+
+# з)
+b = int(input("Введите число для b >> "))
+a = int(input("Введите число для a >> "))
+c = int(input("Введите число для c >> "))
+d = math.pow(b, 2) - (4 * a * c)
+print("b*b - 4ac =", d)
+
+# и)
+y = int(input("Введите число для y >> "))
+m1 = int(input("Введите число для m1 >> "))
+m2 = int(input("Введите число для m2 >> "))
+r = int(input("Введите число для r >> "))
+u = y * ((m1 * m2) / math.pow(r, 2))
+print("y*m1m2/r*r =", u)
+
+# к)
+i = int(input("Введите число для I >> "))
+r = int(input("Введите число ддля R >> "))
+w = math.pow(i, 2) * r
+print("I*I*R =", w)
+
+# л)
+a = int(input("Введите число для a >> "))
+b = int(input("Введите число для b >> "))
+c = int(input("Введите число для C >> "))
+d = a * b * math.sin(c)
+print("absinc =", d)
+
+# м)
+a = int(input("Введите число для a >> "))
+b = int(input("Введите число для b >> "))
+c = int(input("Введите число для c >> "))
+d = math.sqrt(math.pow(a, 2) + math.pow(b, 2) - (2 * a * b * math.cos(c)))
+print("Квадратный корень из a*a + b*b - 2a*b*cosc =", d)
+
+# н)
+a = int(input("Введите число для a >> "))
+b = int(input("Введите число для b >> "))
+c = int(input("Введите число для c >> "))
+d = int(input("Введите число для d >> "))
+e = ((a * d) + (b * c)) / (a * d)
+print("ad+bc/ad = ", e)
+
+# о)
+x = int(input("Введите число для x >> "))
+y = math.sqrt(1 - math.pow(math.sin(x), 2))
+print("Квадратный корень из 1 - sinx * sinx =", y)
+
+# п)
+a = int(input("Введите число для a >> "))
+b = int(input("Введите число для b >> "))
+c = int(input("Введите число для c >> "))
+x = int(input("Введите число для x >> "))
+z = 1 / math.sqrt((a * math.pow(x, 2)) + (b * x) + c)
+print("1/квадратный корень из axx+bx+c =", z)
+
+# р)
+x = int(input("Введите число для x >> "))
+y = (math.sqrt(x + 1) + math.sqrt(x - 1)) / (2 * math.sqrt(x))
+print("(Кв.кор (x + 1) + кв. кор (X - 1)) / 2 кв.кор (x) =", y)
+
+# с)
+x = int(input("Введите число для x >> "))
+y = math.fabs(x) + math.fabs(x + 1)
+print("|x| + |x+1| = ", y)
+
+# т)
+x = int(input("Введите число для x >> "))
+y = math.fabs(1 - math.fabs(x))
+print("|1-|x|| =", y)
